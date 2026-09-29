@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eyal Leder es mi hijo</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0e0e10; --ink:#fff; --orange:#ff7a1a; --muted:#a1a1aa; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--ink); font-family:Inter,system-ui,sans-serif;
+         min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+         text-align:center; padding:24px 16px; overflow-x:hidden; }
+  .court { position:fixed; inset:0; z-index:-1; opacity:.12;
+           background:
+             radial-gradient(circle at 50% 50%, transparent 119px, var(--orange) 120px, var(--orange) 123px, transparent 124px),
+             linear-gradient(90deg, transparent calc(50% - 2px), var(--orange) calc(50% - 2px), var(--orange) calc(50% + 2px), transparent calc(50% + 2px)); }
+  .ball { font-size:clamp(64px,14vw,120px); animation:bounce 1s cubic-bezier(.5,0,.5,1) infinite alternate; }
+  @keyframes bounce { from { transform:translateY(-30px) rotate(0) } to { transform:translateY(20px) rotate(90deg) } }
+  .tag { color:var(--orange); font-weight:600; letter-spacing:.2em; text-transform:uppercase; font-size:14px; margin-top:24px; }
+  h1 { font-family:Anton,Impact,sans-serif; font-size:clamp(48px,12vw,140px); line-height:.95; margin:12px 0; text-transform:uppercase; }
+  h1 span { color:var(--orange); }
+  p { color:var(--muted); font-size:clamp(16px,2.5vw,22px); max-width:620px; }
+  .stats { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:36px; }
+  .stat { border:2px solid var(--orange); border-radius:14px; padding:14px 20px; min-width:130px; }
+  .stat b { display:block; font-family:Anton,Impact,sans-serif; font-size:32px; color:var(--orange); }
+  .stat small { color:var(--muted); text-transform:uppercase; letter-spacing:.1em; font-size:12px; }
+  footer { margin-top:48px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+  <div class="court"></div>
+  <div class="ball">🏀</div>
+  <div class="tag">Noticia oficial de la cancha</div>
+  <h1>Eyal Leder<br>es mi <span>hijo</span></h1>
+  <p>En el basket, Eyal Leder es mi hijo. Cada partido, cada tiro, cada rebote — el papá manda en la cancha. 👑</p>
+  <div class="stats">
+    <div class="stat"><b>0</b><small>Victorias vs. papá</small></div>
+    <div class="stat"><b>100%</b><small>Mi hijo</small></div>
+    <div class="stat"><b>∞</b><small>Clases gratis</small></div>
+  </div>
+  <footer>Confirmado por Marco · 2026</footer>
+</body>
+</html>
